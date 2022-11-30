@@ -18,4 +18,4 @@ obs$.subscribe(
     text => console.log(text),
     err => console.log(err),
     () => console.log('fim')
-    )
+)
