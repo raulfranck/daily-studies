@@ -23,6 +23,7 @@ promise.then(num => console.log('Promise', num))
 obs$.subscribe(num => console.log('Observable', num))
 
 setTimeout(() => {
-    obs$.subscribe(num => console.log('Observable', num))
+    obs$.subscribe(num => console.log('Observable', num),
+    err => console.log(err))
     promise.then(num => console.log('Promise', num))
 }, 2000)
